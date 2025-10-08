@@ -1,4 +1,6 @@
-export default function VotingPanel() {
+import React from "react";
+
+const VotingPanel: React.FC = () => {
   return (
     <div className="max-w-2xl mx-auto mt-10 p-6 bg-blue-900 rounded-2xl shadow-xl">
       <h2 className="text-xl font-semibold mb-4">Cast Your Vote</h2>
@@ -22,4 +24,6 @@ export default function VotingPanel() {
       </form>
     </div>
   );
-}
+};
+
+export default VotingPanel;
