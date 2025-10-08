@@ -1,13 +1,11 @@
-import React from "react";
-
-const VotingPanel: React.FC = () => {
+export default function VotingPanel() {
   return (
-    <div className="max-w-2xl mx-auto mt-10 p-6 bg-blue-900 rounded-2xl shadow-xl">
+    <div className="max-w-2xl mx-auto mt-10 p-6 bg-gray-900 rounded-2xl shadow-xl">
       <h2 className="text-xl font-semibold mb-4">Cast Your Vote</h2>
 
       <form className="flex flex-col gap-4">
         <label className="flex flex-col">
-          <span className="text-blue-400 mb-1">Candidate:</span>
+          <span className="text-gray-400 mb-1">Candidate:</span>
           <select className="p-2 bg-gray-800 rounded-lg text-white">
             <option>Candidate A</option>
             <option>Candidate B</option>
@@ -24,6 +22,4 @@ const VotingPanel: React.FC = () => {
       </form>
     </div>
   );
-};
-
-export default VotingPanel;
+}

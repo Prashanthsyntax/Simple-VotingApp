@@ -1,13 +1,14 @@
-import Navbar from "./components/Navbar"
-import VotingPanel from "./components/VotingPanel"
+import React from "react";
+import Navbar from "./components/Navbar";
+import VotingPanel from "./components/VotingPanel";
 
-const App = () => {
+const App: React.FC = () => {
   return (
-    <>
+    <div>
       <Navbar />
       <VotingPanel />
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default App
+export default App;
